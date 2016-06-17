@@ -1,0 +1,156 @@
+body {
+  font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;;
+  color: #ffffff;
+  background: url('pixels.jpg');
+}
+header {
+  background: #212121;
+  background-image: url('logo.png');
+  background-repeat: no-repeat;
+  background-position: center -335px;
+  border-radius: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 15px;
+}
+h1 {
+  text-align: center;
+}
+p {
+  text-indent: 30px
+}
+table {
+  border-collapse: collapse;
+  background: #212121;
+  border: none;
+}
+table, th, td {
+  text-align: left;
+}
+th, td {
+  padding: 5px;
+  border-left: 5px solid #212121;
+}
+th:first-child, td:first-child {
+  border-left: none;
+}
+tr:nth-of-type(odd) {
+  background: #000;
+}
+table ul {
+  padding: 0px;
+  margin: 0px;
+  padding-left: 15px;
+}
+#faq {
+  background: #212121;
+  padding: 5px;
+  border-radius: 5px;
+}
+#tutorial {
+  margin: 0px auto;
+  text-align: center;
+}
+#library {
+  background: #212121;
+  padding: 5px;
+  border-radius: 5px;
+}
+#library td, th {
+  text-align: center;
+}
+#logo {
+  position: relative;
+  left: 26px;
+}
+small {
+  font-size: 9px;
+}
+nav {
+  float: left;
+  width: 150px;
+  background: #212121;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+nav ul {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0px;
+  margin: 15px
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #ff0049;
+}
+a:visited {
+  color: #d9003d;
+}
+a:hover {
+  transition: color 0.5s;
+  color: #fff;
+}
+header:hover {
+  background-image: url('logo_invert.png');
+  background-color: #fff;
+}
+ul {
+  list-style-type: square;
+}
+figcaption {
+  text-align: center;
+  font-size: small;
+}
+#wrapper {
+  background: #000;
+  margin: 0px auto;
+  padding: 15px;
+  width: 742px;
+  box-shadow: 0px 0px 75px 75px #000;
+}
+#content {
+  margin-left: 150px;
+  padding-left: 15px;
+}
+#gallery {
+  position: relative;
+}
+#gallery ul {
+  list-style-type: none;
+  padding: 0px;
+}
+#gallery li {
+  padding-bottom: 10px;
+}
+#gallery img {
+  border: none;
+}
+#gallery span img {
+  object-fit: fill;
+}
+#gallery span  {
+  position: absolute;
+  left: -1000px;
+  opacity: 0.0;
+  transition: opacity 0.25s ease-in-out;
+}
+#gallery a:hover span {
+  position: absolute;
+  left: 75px;
+  top: -16px;
+  opacity: 1;
+}
+#gallery h2 {
+  position: absolute;
+  color: #212121;
+  left: 170px;
+  top: 136px;
+}
+footer {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 12px;
+  margin-left: 150px;
+}

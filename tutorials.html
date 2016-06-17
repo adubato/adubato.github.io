@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+    Author: Michael Adubato
+-->
+
+<head>
+    <title>AOTG :: Tutorial :: Audacity &amp; Adobe Photoshop&reg;</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="glitch.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <a href="index.html"><header><h1>&nbsp;</h1></header></a>
+        <nav>
+            <ul>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="tutorials.html">Tutorial</a></li>
+                <li><a href="fxlibrary.html">FX Library</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="links.html">External Links</a></li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <h2>Tutorial :: Audacity Adobe Photoshop&reg;</h2>
+            <ol>
+                <h3><li>Find an image to start with.</h3><p>Any digital image file can be "glitched", but it's best to find something with some visual interest. There is no limitation on file type or resolution, so long as it is an image saved on your computer. It can even be a photo you've taken yourself.</p></li>
+                <h3><li>Open the image in Photoshop and select File > Save As. Chose where you'd like to save, and select TIFF for the format.</h3><figure id="tutorial"><img src="tutorial1_1.jpg" width="350"><figcaption id="tutorial">The TIFF format as it appears in Photoshop</figcaption></figure></li>
+                <h3><li>After clicking save, another box will appear as shown below.</h3><p>For Image Compression, select "NONE". For Pixel Order, select "Per Channel (RRGGBB)". This allows the image to be interpreted by audio editing software, such as Audacity.</p><figure id="tutorial"><img src="tutorial1_2.jpg" width="300"><figcaption id="tutorial">Select "NONE" and "Per Channel (RRGGBB)"</figcaption></figure></li>
+                <h3><li>Now, open Audacity and select File > Import > Raw Data. Select the TIFF you just created and click Open.</h3><p>Since Audacity allows us to import raw data, it is a great way to create glitched images, but obviously not the only one.</p></li>
+                <h3><li>You should see a new window labeled "Import Raw Data", as shown below.</h3><p>For Encoding select "U-Law" and for Channels select "1 Channel (Mono)". The options should match the image below. With these options selected, click Import.</p><figure id="tutorial"><img src="tutorial1_3.jpg" width="200"><figcaption id="tutorial">Select "U-Law" and "1 Channel (Mono)"</figcaption></figure></li>
+                <h3><li>Now you should see your image represented as a blue waveform. Zoom in towards the beginning of the waveform by holding CTRL and scrolling the mousewheel.</h3><p>You are looking for something similar to the image below. This oddly shaped chunk at the begginning of the wave represents the image's meta properties, including resolution and file type. These initial bytes tell the computer that the data should be interpreted as an image. Therefore, it is essential that you do NOT edit this part of the waveform, as it will corrupt the file.</p><figure id="tutorial"><img src="tutorial1_4.jpg" width="300"><figcaption id="tutorial">Do not edit!</figcaption></figure></li>
+                <h3><li>Using the selection tool in Audacity, select the waveform from a point after the initial meta chunk.</h3><p>As you can see in the image below, the waveform is divided into three distinct chunks. These chunks represent the image's RBG color data. The first chunk represents red, the second is green, and the third is blue. For now, you may find it easier to select the entire waveform (except the meta chunk mentioned in the last step).</p><figure id="tutorial"><img src="tutorial1_5.jpg" width="500"><figcaption id="tutorial">The entire waveform is selected after the meta chunk.</figcaption></figure></li>
+                <h3><li>Now you are able to apply audio effects to the image. Experiment however you want!</h3><p>You won't know what the effects have done until you view the image, so to get an idea, use our <a href="fxlibrary.html">FX Library</a>. Or just go crazy and experiment on your own!</p><p>Note: Avoid using effects that change the length of the audio, as this may corrupt the image. Additionally, applying too many effects (more than 4 or 5) may render the image completely unrecognizable.</p><figure id="tutorial"><img src="tutorial1_6.jpg" width="250"><figcaption id="tutorial">Audacity's effects menu</figcaption></figure></li>
+                <h3><li>When you're done applying effects, select File > Export (NOT export selection).</h3><p>In the window that appears, select "Other uncompressed files" under the "Save as type" menu. Then click "Options" located under the Save and Cancel buttons. In the option window (shown below), select "RAW (header-less)" and "U-law" encoding.</p><figure id="tutorial"><img src="tutorial1_7.jpg" width="250"><figcaption id="tutorial">Select "RAW (header-less)" and "U-law"</figcaption></figure></li>
+                <h3><li>Click OK and Save to export your glitched image.</h3><p>It should be a RAW file, which can be viewed using Microsoft Paint. If you are happy with your image, save it as any image file you like. Otherwise, you can go back into Audacity and experiment with other effects. Congratulations, you've created your first glitched image!</p><figure id="tutorial"><img src="tutorial1_8.jpg" width="300"><figcaption id="tutorial">Microsoft Paint's save menu</figcaption></figure></li>
+            </ol>
+        </div>
+
+        <footer>
+            Copyright &copy; 2015 ArtOfTheGlitch.com
+            <br />
+            <a href="mailto:adubato.michael41@student.ccm.edu">adubato.michael41@student.ccm.edu</a>
+        </footer>
+    </div>
+</body>
+</html>
